@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ML Strength</title>
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+        });
+    </script>
+</head>
+<body>
+    <div id="header"></div>
+    <div class="webform">
+        <h1>Book a class</h1>
+        <a href="table.html" id="back">Back to class</a>
+        <div class="bookcontainer">
+            <form >
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name.." required> 
+
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+            
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" placeholder="Your last email.." required>
+                
+                <label for="classname">Class Name</label>
+                <select id="classname" name="classname">
+                    <option value="">CHOOSE A CLASS</option>
+                    <option value="BODYATTACK">BODYATTACK</option>
+                    <option value="ZUMBA">ZUMBA</option>
+                    <option value="BODYPUMP">BODYPUMP</option>     
+                </select>
+                <label for="classdate">CLASS DATE</label>
+                <input type="date" id="classdate" name="cdate" required>
+                <input type="submit" id="subbook" value="submit">
+            </form>
+          </div>
+    </div>
+    <div id="footer"></div>
+</body>
+</html>
